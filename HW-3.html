@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="HW-3-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet"/>
+    <script src="HW-3.js"></script>
+</head>
+<body>
+    <div class="main">
+        <form onsubmit="return validate()">
+        <h1>Form</h1>
+
+        <div class="container">
+            <div class="group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required minlength="3">
+            </div>
+            <div class="group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="group">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" id="cpassword" required>
+            </div>
+            
+            <br>
+            
+            <div class="check">Gender:</div>
+            <div class="gen">
+                <div class="che">
+                <input type="checkbox" id="gender1" name="gender1" value="Male">
+                <label for="gender1">Male</label>
+                </div>
+                <div class="che">
+                <input type="checkbox" id="gender2" name="gender2" value="Female">
+                <label for="gender2">Female</label>
+                </div>
+                <div class="che">
+                <input type="checkbox" id="gender3" name="gender3" value="Other">
+                <label for="gender3">Other</label>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="check">Interests:</div>
+            <div class="int">
+                <div class="che">
+                <input type="checkbox" id="int1" name="int1" value="Sports">
+                <label for="int1">Sports</label>
+                </div>
+                <div class="che">
+                <input type="checkbox" id="int2" name="int2" value="Music">
+                <label for="int2">Music</label>
+                </div>
+                <div class="che">
+                <input type="checkbox" id="int3" name="int3" value="Travel">
+                <label for="int3">Travel</label>
+                </div>
+            </div>
+              
+            <br>
+
+            <div class="count">
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="usa">USA</option>
+                    <option value="ge">Georgia</option>
+                    <option value="ca">Canada</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="value">Choose a value:</div>
+            <div class="field">
+            <input type="range" id="range" name="range" min="0" max="100" oninput="updateTextInput(this.value);">
+            <output id="rangeValue">50</output>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </div>
+        </form>
+    </div>        
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    background-color: lightgrey;
+}
+.main{
+    background-color: white;
+    border-radius: 5px;
+    display:block;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+h1{
+    display: flex;
+    padding-top:8px;
+    align-items:flex-start;
+    justify-content: center;
+    font-family: "Outfit";
+}
+.group > label, .check, .count >label, .value{
+    display: block;
+    font-size: large;
+    font-family: "outfit";
+    margin-left: 10%;;
+    margin-bottom: 5px;
+}
+input{
+    width:80%;
+    height: 2em;
+    margin-left: 10%;
+    margin-bottom: 15px;
+}
+.gen, .int{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
+    width: 40%;
+    margin-left:10%;
+}
+.che{
+    display: flex;
+    flex-direction: column;
+}
+.che>label{
+    font-size: small;
+    font-family:"outfit";
+}
+.gen>.che>input,.int>.che>input{
+    width:50%;
+    height:50%;
+}
+.gen>.che>input{
+    width: 1em;
+    height: 1em;
+    border: 1px solid #262323;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.gen>.che>input:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color: blue;
+  }
+select{
+    width:80%;
+    height:40px;
+    margin-left: 10%;
+}
+#range{
+    appearance: none;
+    -webkit-appearance: none;
+    height:0.25em;
+    border:1px solid rgb(255, 255, 255);
+    border-radius:5px;
+    background-color: grey;
+    margin-bottom:0px;
+}
+.field>#rangeValue{
+    display: block;
+    font-size:small;
+    font-family: "outfit";
+    margin-left: 10%;;
+    margin-bottom: 5px;
+}
+
+button{
+    border: none;
+    font-size: large;
+    font-family: "outfit";
+    border-radius: 5px;
+    background-color: rgb(46, 98, 181);
+    color:white;
+    width:80%;
+    height:40px;
+    margin-left:10%;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: aquamarine;
+}
+button:active{
+    background-color: blue;
+}
+
